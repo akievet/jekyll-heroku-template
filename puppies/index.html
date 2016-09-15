@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<p>This is the landing page for your collection</p>
+<ul>
+{% for puppy in site.puppies %}
+<li><a href="{{ puppy.path}}">{{ puppy.title }}</a></li>
+{% endfor %}
+</ul>
